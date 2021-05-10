@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "ACgBA,AAAA,CAAC,CACD,CAAC,AAAA,QAAQ,CACT,CAAC,AAAA,OAAO,AAAC,CACL,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,OAAO,CACtB,AAED,AAAA,IAAI,AAAC,CACD,UAAU,CAAE,UAAU,CACtB,SAAS,CAAE,KAAK,CACnB,AAED,AAAA,IAAI,AAAC,CACD,WAAW,CAjBA,QAAQ,CAAE,UAAU,CAkB/B,KAAK,CArBW,OAAO,CAsBvB,WAAW,CAAE,GAAG,CAChB,WAAW,CAAE,GAAG,CACnB,AElCD,AAAA,QAAQ,AAAC,CACL,gBAAgB,CFAJ,OAAO,CECtB,ACFD,AAAA,OAAO,AAAC,CACJ,gBAAgB,CAAE,WAAW,CAChC,ACFD,AAAA,SAAS,AAAC,CACN,gBAAgB,CAAE,MAAM,CAC3B,ACFD,AAAA,SAAS,AAAC,CACN,gBAAgB,CAAE,SAAS,CAC9B,ACDI,AAAD,gBAAW,AAAC,CACR,gBAAgB,CAAE,GAAG,CACxB,AAEA,AAAD,eAAU,AAAC,CACP,gBAAgB,CNAH,OAAO,CMCvB,ACPL,AAAA,MAAM,AAAC,CACH,gBAAgB,CAAE,MAAM,CAC3B,ACFD,AAAA,QAAQ,AAAC,CACL,gBAAgB,CAAE,IAAI,CACzB,ACFD,AAAA,OAAO,AAAC,CACJ,gBAAgB,CAAE,MAAM,CAC3B",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/_base.scss",
+        "../sass/_typography.scss",
+        "../sass/_sidebar.scss",
+        "../sass/_header.scss",
+        "../sass/_realtors.scss",
+        "../sass/_features.scss",
+        "../sass/_story.scss",
+        "../sass/_homes.scss",
+        "../sass/_gallery.scss",
+        "../sass/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
