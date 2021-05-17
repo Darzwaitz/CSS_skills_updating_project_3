@@ -41,8 +41,8 @@ body {
     grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]  minmax(6rem, 1fr)  [full-end];// 8 columns of width between minimum content & 14rem max content - column added at start as the sidebar of width 8rem - 1fr added on both sides of 8 column grid as 'margin auto' space, that can also be used for content that spans all of these columns (full width of screen) - REMINDER: the named lines with the repeat function are automatically numbered - minmax(6rem, 1fr) used to keep always 6rem on the explicit margin on the 8 column grid
 
     //temp
-    & > * {
-        padding: 40px;
-        font-size: 3rem;
-    }
+    // & > * {
+    //     padding: 40px;
+    //     font-size: 3rem;
+    // }
 }
