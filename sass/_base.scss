@@ -14,6 +14,10 @@ $color-grey-dark-2: #6D5D4B;
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
+// Responsive BREAKPOINTZ
+$bp-largest: 75em; //1200px / 16
+$bp-large: 62.5em; //1000px / 16
+$bp-medium: 50em; //800px / 16
 *,
 *::before,
 *::after {
@@ -25,6 +29,10 @@ $font-display: 'Josefin Sans', sans-serif;
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62.5% -> 1 rem = 10px
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -40,9 +48,11 @@ body {
     //8 column layout
     grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]  minmax(6rem, 1fr)  [full-end];// 8 columns of width between minimum content & 14rem max content - column added at start as the sidebar of width 8rem - 1fr added on both sides of 8 column grid as 'margin auto' space, that can also be used for content that spans all of these columns (full width of screen) - REMINDER: the named lines with the repeat function are automatically numbered - minmax(6rem, 1fr) used to keep always 6rem on the explicit margin on the 8 column grid
 
-    //temp
-    // & > * {
-    //     padding: 40px;
-    //     font-size: 3rem;
-    // }
+    @media only screen and (max-width: $bp-large) {
+        grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]  minmax(6rem, 1fr)  [full-end];
+    }
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content 40vw repeat(3, min-content); //new row added to rearrange 'realtors' div position & calc header to fill entire screen minus the nav/sidebar
+    }
 }
